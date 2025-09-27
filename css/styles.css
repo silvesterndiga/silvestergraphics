@@ -150,6 +150,32 @@ section h2 { text-align: center; font-size: 2rem; margin-bottom: 20px; }
   padding: 20px;
   box-shadow: 0 3px 6px rgba(0,0,0,0.1);
   text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.service-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+/* Vibrant colors for service cards */
+.service-item:nth-child(1) {
+  background: linear-gradient(135deg, #ff6b6b, #ff8e53); /* Coral to orange */
+  color: #fff;
+}
+.service-item:nth-child(2) {
+  background: linear-gradient(135deg, #4ecdc4, #45b7d1); /* Teal to blue */
+  color: #fff;
+}
+.service-item:nth-child(3) {
+  background: linear-gradient(135deg, #96ce47, #d4e157); /* Lime to yellow */
+  color: #333;
+}
+.service-item:nth-child(4) {
+  background: linear-gradient(135deg, #a445b2, #d678ff); /* Violet to purple */
+  color: #fff;
+}
+.service-item:nth-child(n+5) {
+  background: linear-gradient(135deg, #ff9f43, #ee5253); /* Fallback vibrant gradient */
+  color: #fff;
 }
 .portfolio-grid {
   display: grid;
@@ -257,7 +283,6 @@ footer {
 .service-item {
     flex: 1;
     min-width: 180px; /* ensures they don’t shrink too much */
-    background: #f9f9f9;
     padding: 20px;
     border-radius: 10px;
     text-align: center;
@@ -274,6 +299,3 @@ footer {
     background: #ccc;
     border-radius: 4px;
 }
-
-
-
